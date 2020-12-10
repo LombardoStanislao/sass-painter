@@ -2,17 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: auto;
 }
 
 header {
   background-color: black;
-  height: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  padding: 2px;
 }
 
 .navbar-top {
@@ -22,15 +29,15 @@ header {
   align-items: center;
 }
 
-ul {
+.navbar-top ul {
   list-style-type: none;
 }
 
-ul li {
+.navbar-top ul li {
   display: inline-block;
 }
 
-ul li a {
+.navbar-top ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,21 +47,134 @@ ul li a {
   padding: 15px;
 }
 
-ul li a i {
+.navbar-top ul li a i {
   margin-right: 10px;
   color: #009cff;
 }
 
-ul li a p {
+.navbar-top ul li a p {
   font-size: 14px;
   color: #999;
 }
 
-ul li a p:hover {
+.navbar-top ul li a p:hover {
   color: white;
 }
 
 .fa-phone-alt + p {
   text-decoration: underline;
+}
+
+#logo {
+  width: 100px;
+  margin-right: 30px;
+}
+
+.navbar-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-bottom ul {
+  list-style-type: none;
+}
+
+.navbar-bottom ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-bottom ul li a {
+  display: inline-block;
+  color: white;
+  padding: 16px 20px;
+}
+
+.navbar-bottom ul li a i {
+  color: #999;
+}
+
+.navbar-bottom ul li a:hover {
+  background-color: white;
+  color: #333333;
+}
+
+.navbar-bottom ul li a:hover + .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  display: none;
+}
+
+.dropdown-menu .dropdown-item {
+  display: list-item;
+  width: 190%;
+  background: white;
+  position: relative;
+}
+
+.dropdown-menu .dropdown-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #333333;
+}
+
+.dropdown-menu .dropdown-item a:hover {
+  background-color: #e6e6e6;
+}
+
+.dropdown-menu .dropdown-item a:hover i {
+  color: #333333;
+}
+
+.dropdown-menu .dropdown-item a:hover + ul {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+.dropdown-menu .dropdown-item ul li {
+  width: 250%;
+  background: #e6e6e6;
+}
+
+.dropdown-menu .dropdown-item ul li a:hover {
+  background-color: #d2d2d2;
+}
+
+.dropdown-menu .dropdown-item ul li h4 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 16px;
+  color: gray;
+  margin-left: 20px;
+}
+
+.dropdown-menu .dropdown-item ul:hover {
+  display: block;
+}
+
+.dropdown-menu:hover {
+  display: block;
+}
+
+.jumbotron {
+  height: 550px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-size: cover;
 }
 
