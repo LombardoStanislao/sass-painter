@@ -178,3 +178,79 @@ select {
   background-size: cover;
 }
 
+footer {
+  background-color: #ececec;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.footer-text ul {
+  list-style-type: none;
+}
+
+.footer-text ul li p {
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.footer-text ul li a {
+  text-decoration: none;
+  color: #666666;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.footer-text ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-text ul li a small {
+  text-transform: capitalize;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.social-icons .social-logo {
+  padding: 5px;
+}
+
+.social-icons .social-logo i {
+  font-size: 40px;
+}
+
+.social-icons .social-logo .fa-instagram-square {
+  color: #e4405f;
+}
+
+.social-icons .social-logo .fa-facebook-square {
+  color: #3b5998;
+}
+
+.social-icons .social-logo .fa-twitter-square {
+  color: #1da1f2;
+}
+
+.social-icons .social-logo .fa-youtube-square {
+  color: #cd201f;
+}
+
+.social-icons .social-logo .fa-pinterest-square {
+  color: #bd081c;
+}
+
+.social-icons .social-logo .fa-rss-square {
+  color: #ff8d00;
+}
+
