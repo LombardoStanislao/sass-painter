@@ -6,7 +6,55 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: auto;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+}
+
+.navbar-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+ul li a i {
+  margin-right: 10px;
+  color: #009cff;
+}
+
+ul li a p {
+  font-size: 14px;
+  color: #999;
+}
+
+ul li a p:hover {
+  color: white;
+}
+
+.fa-phone-alt + p {
+  text-decoration: underline;
 }
 
