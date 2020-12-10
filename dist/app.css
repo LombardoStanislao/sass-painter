@@ -254,3 +254,41 @@ footer {
   color: #ff8d00;
 }
 
+#terms-of-use {
+  height: 100px;
+  background-color: #333333;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.last-section a {
+  padding-right: 20px;
+}
+
+.last-section ul {
+  list-style-type: none;
+}
+
+.last-section ul li {
+  display: inline-block;
+}
+
+.last-section ul li a small {
+  color: #999;
+}
+
+.last-section ul li a small:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.last-section ul li small {
+  color: white;
+}
+

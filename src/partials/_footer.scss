@@ -73,3 +73,42 @@ footer {
         }
     }
 }
+
+
+#terms-of-use {
+    height: 100px;
+    background-color: $dark-text;
+}
+
+
+.last-section {
+    @include flex(row, space-between, center);
+    height: 100px;
+
+    a {
+        padding-right: $spacing;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            a {
+                small {
+                    color: $light-dark-text;
+
+                    &:hover {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+            small {
+                color: white;
+            }
+        }
+    }
+}
